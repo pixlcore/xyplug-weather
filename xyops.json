@@ -10,7 +10,7 @@
 				"title": "Weather Forecast",
 				"enabled": true,
 				"type": "event",
-				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.0",
+				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.1",
 				"script": "",
 				"kill": "parent",
 				"notes": "Fetch current conditions and daily/hourly forecasts from Open-Meteo.",
@@ -29,9 +29,9 @@
 						"id": "latitude",
 						"title": "Latitude",
 						"type": "text",
-						"caption": "Enter the latitude as a decimal number (optional if using postal code).",
+						"caption": "Enter the latitude as a decimal number (ignored if using postal code).",
 						"locked": false,
-						"value": 37.7749,
+						"value": 0,
 						"variant": "number",
 						"required": false
 					},
@@ -39,9 +39,9 @@
 						"id": "longitude",
 						"title": "Longitude",
 						"type": "text",
-						"caption": "Enter the longitude as a decimal number (optional if using postal code).",
+						"caption": "Enter the longitude as a decimal number (ignored if using postal code).",
 						"locked": false,
-						"value": -122.4194,
+						"value": 0,
 						"variant": "number",
 						"required": false
 					},
@@ -81,7 +81,7 @@
 					{
 						"id": "daily",
 						"title": "Daily Fields",
-						"type": "textarea",
+						"type": "text",
 						"caption": "Comma-separated list of daily fields to fetch.",
 						"locked": false,
 						"value": "temperature_2m_max, temperature_2m_min, rain_sum, showers_sum, snowfall_sum, precipitation_hours, weathercode, windspeed_10m_max, winddirection_10m_dominant, shortwave_radiation_sum"
@@ -89,7 +89,7 @@
 					{
 						"id": "hourly",
 						"title": "Hourly Fields",
-						"type": "textarea",
+						"type": "text",
 						"caption": "Comma-separated list of hourly fields to fetch.",
 						"locked": false,
 						"value": "temperature_2m, relativehumidity_2m, precipitation, weathercode, windspeed_10m, winddirection_10m"
