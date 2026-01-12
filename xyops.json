@@ -1,0 +1,139 @@
+{
+	"type": "xypdf",
+	"description": "xyOps Portable Data Object",
+	"version": "1.0",
+	"items": [
+		{
+			"type": "plugin",
+			"data": {
+				"id": "pmkalpk09rcsahq5t",
+				"title": "Weather Forecast",
+				"enabled": true,
+				"type": "event",
+				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.0",
+				"script": "",
+				"kill": "parent",
+				"notes": "Fetch current conditions and daily/hourly forecasts from Open-Meteo.",
+				"icon": "weather-partly-cloudy",
+				"params": [
+					{
+						"id": "postal_code",
+						"title": "Postal Code",
+						"type": "text",
+						"caption": "Optional postal/ZIP code for geolocation (overrides latitude/longitude).",
+						"locked": false,
+						"value": "",
+						"required": false
+					},
+					{
+						"id": "latitude",
+						"title": "Latitude",
+						"type": "text",
+						"caption": "Enter the latitude as a decimal number (optional if using postal code).",
+						"locked": false,
+						"value": 37.7749,
+						"variant": "number",
+						"required": false
+					},
+					{
+						"id": "longitude",
+						"title": "Longitude",
+						"type": "text",
+						"caption": "Enter the longitude as a decimal number (optional if using postal code).",
+						"locked": false,
+						"value": -122.4194,
+						"variant": "number",
+						"required": false
+					},
+					{
+						"id": "temperature_unit",
+						"title": "Temperature Unit",
+						"type": "select",
+						"caption": "Choose the temperature unit returned by the API.",
+						"locked": false,
+						"value": "fahrenheit, celsius"
+					},
+					{
+						"id": "windspeed_unit",
+						"title": "Windspeed Unit",
+						"type": "select",
+						"caption": "Choose the windspeed unit returned by the API.",
+						"locked": false,
+						"value": "mph, kmh, ms, kn"
+					},
+					{
+						"id": "precipitation_unit",
+						"title": "Precipitation Unit",
+						"type": "select",
+						"caption": "Choose the precipitation unit returned by the API.",
+						"locked": false,
+						"value": "inch, mm"
+					},
+					{
+						"id": "timezone",
+						"title": "Timezone",
+						"type": "text",
+						"caption": "Enter an IANA timezone (e.g. `America/Los_Angeles`) or `auto`.",
+						"locked": false,
+						"value": "auto",
+						"required": true
+					},
+					{
+						"id": "daily",
+						"title": "Daily Fields",
+						"type": "textarea",
+						"caption": "Comma-separated list of daily fields to fetch.",
+						"locked": false,
+						"value": "temperature_2m_max, temperature_2m_min, rain_sum, showers_sum, snowfall_sum, precipitation_hours, weathercode, windspeed_10m_max, winddirection_10m_dominant, shortwave_radiation_sum"
+					},
+					{
+						"id": "hourly",
+						"title": "Hourly Fields",
+						"type": "textarea",
+						"caption": "Comma-separated list of hourly fields to fetch.",
+						"locked": false,
+						"value": "temperature_2m, relativehumidity_2m, precipitation, weathercode, windspeed_10m, winddirection_10m"
+					},
+					{
+						"id": "forecast_days",
+						"title": "Forecast Days",
+						"type": "text",
+						"caption": "Optional number of days to return in the forecast.",
+						"locked": false,
+						"value": 7,
+						"variant": "number",
+						"required": false
+					},
+					{
+						"id": "forecast_hours",
+						"title": "Forecast Hours",
+						"type": "text",
+						"caption": "Number of hourly entries to return (defaults to 24).",
+						"locked": false,
+						"value": 24,
+						"variant": "number",
+						"required": false
+					},
+					{
+						"id": "timeout_ms",
+						"title": "Timeout (ms)",
+						"type": "text",
+						"caption": "Number of milliseconds to wait for the API response.",
+						"locked": false,
+						"value": 15000,
+						"variant": "number",
+						"required": false
+					},
+					{
+						"id": "air_quality",
+						"title": "Include Air Quality",
+						"type": "checkbox",
+						"caption": "Include current air quality data from Open-Meteo.",
+						"locked": false,
+						"value": true
+					}
+				]
+			}
+		}
+	]
+}

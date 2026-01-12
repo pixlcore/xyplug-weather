@@ -1,0 +1,24 @@
+{
+	"name": "xyplug-weather",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Fetch current conditions and forecasts from the Open-Meteo API.",
+	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
+	"homepage": "https://github.com/pixlcore/xyplug-weather",
+	"license": "MIT",
+	"bin": {
+		"xyplug-weather": "index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pixlcore/xyplug-weather"
+	},
+	"bugs": {
+		"url": "https://github.com/pixlcore/xyplug-weather/issues"
+	},
+	"keywords": [
+		"xyops",
+		"weather",
+		"open-meteo"
+	]
+}
