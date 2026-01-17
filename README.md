@@ -24,8 +24,6 @@ Either `postal_code` or `latitude`/`longitude` is required.
 - `windspeed_unit`: `mph`, `kmh`, `ms`, or `kn`.
 - `precipitation_unit`: `inch` or `mm`.
 - `timezone`: Any valid IANA timezone (e.g. `America/Los_Angeles`) or `auto`.
-- `daily`: Comma-separated list of daily fields.
-- `hourly`: Comma-separated list of hourly fields.
 - `air_quality`: Enable fetching current air quality data (defaults to true).
 - `forecast_days`: Number of days to return (defaults to 7).
 - `forecast_hours`: Number of hourly entries to return (defaults to 24).
