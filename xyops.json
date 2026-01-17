@@ -10,7 +10,7 @@
 				"title": "Weather Forecast",
 				"enabled": true,
 				"type": "event",
-				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.1",
+				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.2",
 				"script": "",
 				"kill": "parent",
 				"notes": "Fetch current conditions and daily/hourly forecasts from Open-Meteo.",
@@ -77,22 +77,6 @@
 						"locked": false,
 						"value": "auto",
 						"required": true
-					},
-					{
-						"id": "daily",
-						"title": "Daily Fields",
-						"type": "text",
-						"caption": "Comma-separated list of daily fields to fetch.",
-						"locked": false,
-						"value": "temperature_2m_max, temperature_2m_min, rain_sum, showers_sum, snowfall_sum, precipitation_hours, weathercode, windspeed_10m_max, winddirection_10m_dominant, shortwave_radiation_sum"
-					},
-					{
-						"id": "hourly",
-						"title": "Hourly Fields",
-						"type": "text",
-						"caption": "Comma-separated list of hourly fields to fetch.",
-						"locked": false,
-						"value": "temperature_2m, relativehumidity_2m, precipitation, weathercode, windspeed_10m, winddirection_10m"
 					},
 					{
 						"id": "forecast_days",
