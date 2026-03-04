@@ -10,7 +10,7 @@
 				"title": "Weather Forecast",
 				"enabled": true,
 				"type": "event",
-				"command": "npx -y github:pixlcore/xyplug-weather#v1.0.2",
+				"command": "npx -y xyplug-weather@1.0.3",
 				"script": "",
 				"kill": "parent",
 				"notes": "Fetch current conditions and daily/hourly forecasts from Open-Meteo.",

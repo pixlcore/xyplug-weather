@@ -6,7 +6,6 @@ A simple weather plugin for the [xyOps Workflow Automation System](https://xyops
 ## Requirements
 
 - npx
-- git
 
 ## Data Collection
 
