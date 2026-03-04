@@ -1,6 +1,6 @@
 {
-	"name": "xyplug-weather",
-	"version": "1.0.3",
+	"name": "@pixlcore/xyplug-weather",
+	"version": "1.0.4",
 	"description": "Fetch current conditions and forecasts from the Open-Meteo API.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/xyplug-weather",
